@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.box {
+    width: 250px;
+    height: 130px;
+    background-color: chartreuse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 15px;
+    transition: all 0.4s linear;
+    transform: translate(400%);
+}
+
+.box:nth-of-type(even) {
+    background-color: cyan;
+    transform: translate(-400%);
+}
+
+.box.show {
+    transform: translate(0);
+}

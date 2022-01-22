@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+select {
+    margin: 0 10px;
+    min-width: 200px;
+    cursor: pointer;
+    padding: 5px;
+    text-align-last: center;
+    text-align: center;
+}
+
+select:focus {
+    outline: none;
+}
