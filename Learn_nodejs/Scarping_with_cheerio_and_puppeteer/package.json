@@ -1,0 +1,17 @@
+{
+    "name": "Scarping_with_cheerio_and_puppeteer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "Scarp.js",
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.10",
+        "puppeteer": "^13.5.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "node Scarp.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
