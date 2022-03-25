@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
+        <title>Upload Image With Multer</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>URL Shortener</h1>
+            <% if (typeof url) { %>
+            <h5>URL shorten: <%= url.shortUrl%></h5>
+            <% } %>
+            <form action="/api/url/shorten" method="POST">
+                <div style="display: flex">
+                    <div style="flex: 1">
+                        <input name="longUrl" type="text" />
+                    </div>
+                    <div>
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>
